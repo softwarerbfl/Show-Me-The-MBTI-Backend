@@ -37,8 +37,8 @@ public class MbtiController {
         mbtiService.save(dto);
     }
 
-    @DeleteMapping("/mbti")
-    public void delete(@RequestBody DeleteMbtiDto dto){
-        mbtiService.delete(dto.getId());
+    @DeleteMapping("/mbti/{id}")
+    public void delete(@PathVariable Long id){
+        mbtiService.delete(id);
     }
 }

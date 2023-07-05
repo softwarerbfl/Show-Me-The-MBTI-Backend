@@ -5,12 +5,15 @@ import com.example.mbti.domain.Mbti;
 import com.example.mbti.domain.MbtiType;
 import com.example.mbti.dto.MbtiDto;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@Slf4j
 @RequiredArgsConstructor
 public class MbtiService {
     private final MbtiRepository mbtiRepository;
